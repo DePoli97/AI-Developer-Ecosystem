@@ -1,0 +1,42 @@
+# AI Developer Ecosystem
+
+A curated, growing hub of practical resources, tools, and notes for developers building with AI.
+
+This repository is a long-term, public knowledge base focused on the intersection of AI, developer tools, and automation. It is built incrementally and aims to become a useful reference for builders working with Claude, OpenAI, agents, browser automations, prompt engineering, and modern AI workflows.
+
+## What you will find here
+
+The project is organized around five working areas.
+
+`articles/` contains long-form technical writing: deep dives, opinion pieces, and walkthroughs aimed at intermediate-to-advanced developers building AI products.
+
+`tutorials/` contains step-by-step guides. Each tutorial is self-contained and gets you from zero to a working result in a single sitting.
+
+`workflows/` collects reusable AI workflows: agent patterns, prompt chains, retrieval setups, and automation pipelines that can be lifted into real projects.
+
+`snippets/` is a library of small, focused code samples for common AI-engineering tasks (API calls, parsing, retries, structured output, evals, etc.).
+
+`templates/` provides starter projects you can clone, configure, and ship.
+
+## How to use this repository
+
+Browse `articles/` and `tutorials/` for reading material. Copy from `snippets/` and `templates/` when you are building. Open an issue or discussion if you spot a mistake or want to suggest a topic.
+
+## Project direction
+
+The strategic direction, growth plan, and monetization thinking live in dedicated documents at the repository root:
+
+- `ROADMAP.md` - what is planned and in what order.
+- `MONETIZATION.md` - how this project could sustain itself.
+- `SEO.md` - content and discoverability strategy.
+- `GROWTH.md` - distribution and audience growth.
+- `IDEAS.md` - the backlog of things worth exploring.
+- `CONTRIBUTING.md` - how to contribute and the editorial standards.
+
+## License
+
+Code is released under the MIT License (`LICENSE`). Written content is released under CC BY 4.0 unless an article specifies otherwise.
+
+## About
+
+Maintained by Paolo De Poli. Built in the open, one small commit at a time.
