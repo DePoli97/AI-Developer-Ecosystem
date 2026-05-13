@@ -13,3 +13,4 @@ Small, focused code samples. Each one is self-contained, runs as-is (after insta
 - `python/anthropic_tool_use_loop.py` - Minimal but production-shaped agent loop with tool runners, structured error handling, and a hard step limit. Companion to the article on Claude tool use.
 - `python/token_aware_text_splitter.py` - Sentence- and paragraph-aware chunker that respects a token budget.
 - `python/retry_with_backoff.py` - Pragmatic exponential backoff with jitter, typed exceptions, and a clean retry policy.
+- `python/structured_json_output.py` - Robust extractor that turns messy LLM responses (fenced, smart-quoted, trailing-comma, prose-wrapped) into a validated pydantic model. Ships with a self-test.

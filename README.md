@@ -18,6 +18,13 @@ The project is organized around five working areas.
 
 `templates/` provides starter projects you can clone, configure, and ship.
 
+## Latest content
+
+- **Tutorial** - [Parse structured JSON output from any LLM, reliably](./tutorials/2026-05-parse-structured-llm-output.md)
+- **Article** - [A practical guide to Claude tool use](./articles/2026-05-claude-tool-use-practical-guide.md)
+- **Workflow** - [Agent loop with tool use](./workflows/agent-loop-with-tool-use.md)
+- **Snippet** - [Robust structured-JSON output parser](./snippets/python/structured_json_output.py)
+
 ## How to use this repository
 
 Browse `articles/` and `tutorials/` for reading material. Copy from `snippets/` and `templates/` when you are building. Open an issue or discussion if you spot a mistake or want to suggest a topic.
@@ -31,6 +38,7 @@ The strategic direction, growth plan, and monetization thinking live in dedicate
 - `SEO.md` - content and discoverability strategy.
 - `GROWTH.md` - distribution and audience growth.
 - `IDEAS.md` - the backlog of things worth exploring.
+- `CHANGELOG.md` - notable changes, in reverse chronological order.
 - `CONTRIBUTING.md` - how to contribute and the editorial standards.
 
 ## License
