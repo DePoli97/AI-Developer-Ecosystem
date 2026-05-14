@@ -5,6 +5,28 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-05-14
+
+### Added
+- Tutorial: *Build your first Claude tool-use agent in 30 minutes*
+  (`tutorials/2026-05-claude-tool-use-starter.md`). Full walkthrough
+  with three runnable files (tools.py, agent.py, run.py), a visual
+  loop diagram, and a common-mistakes table.
+- Snippet: `snippets/python/token_cost_estimator.py`. Unified cost
+  estimator for Anthropic, OpenAI, and Google models. Accepts raw API
+  response objects or explicit token counts; returns a structured
+  `CostEstimate` with input/output/total USD breakdown and prompt-cache
+  support. Ships with 12 passing self-tests and a cost-comparison table.
+- Research: `opportunities/affiliate-devtools-shortlist.md`. Shortlist
+  of 6 affiliate programmes with audience-fit analysis, SEO keyword
+  angles, revenue projections, and action items.
+
+### Changed
+- `tutorials/README.md`: new tutorial indexed; *Coming soon* list updated.
+- `snippets/README.md`: new snippet indexed.
+- `opportunities/README.md`: affiliate opportunity added as item #4.
+- `SESSION_LOG.md`: 2026-05-14 entry prepended.
+
 ## 2026-05-13
 
 ### Added

@@ -26,6 +26,14 @@ Evidence: most AI newsletters chase hype; the engineering-focused niche is compa
 
 Next step: defer until the repository has a baseline of articles. Then launch a landing page and a monthly digest sourced from this repo and from a tight curated list.
 
+## 4. Affiliate programme — devtools shortlist
+
+Hypothesis: organic tutorials targeting high-intent developers (agent builders, RAG implementers) can generate passive income through affiliate partnerships with the tools naturally referenced in the content (Supabase, Pinecone, Apify).
+
+Evidence: content already references these tools; audience intent is high; recurring affiliate programmes offer compounding returns; developer affiliate programmes typically convert at 2–5%.
+
+Next step: apply to Supabase and Apify affiliate programmes. Write the "Persistent agent memory with Supabase" tutorial as the first affiliate-anchored piece. Full analysis in [`affiliate-devtools-shortlist.md`](./affiliate-devtools-shortlist.md).
+
 ## Process
 
 An opportunity stays here only while it has a defined next step. Once it ships, it moves into `ROADMAP.md`. Once it is killed, it gets a one-line obituary so the project does not retry it without reason.

@@ -28,6 +28,36 @@ Format per entry: date, summary, files touched, next steps surfaced.
 
 ## Session entries
 
+### 2026-05-14
+
+**Summary.** Delivered the three highest-priority next steps from the previous
+session: (1) the 30-minute Claude tool-use starter tutorial, (2) a
+multi-provider token cost estimator snippet, (3) an affiliate opportunities
+research file with actionable shortlist and revenue projections. All tests pass.
+
+**Files touched.**
+- New: `tutorials/2026-05-claude-tool-use-starter.md` (end-to-end tool-use tutorial, 3 code files, common-mistakes table)
+- New: `snippets/python/token_cost_estimator.py` (Anthropic + OpenAI + Google, 12 passing self-tests)
+- New: `opportunities/affiliate-devtools-shortlist.md` (6 programmes, revenue model, action items)
+- Edit: `tutorials/README.md`, `snippets/README.md`, `opportunities/README.md`
+
+**State of remote.** Branch was up to date with `origin/main` at session start;
+push completed normally.
+
+**Economic opportunities identified.**
+- Supabase affiliate (20% / 12 mo): pair with "agent memory" tutorial for natural conversion.
+- Apify affiliate (20% recurring): pair with browser-automation content.
+- Pinecone credit referrals: pair with forthcoming RAG tutorial.
+- Estimated ~$140/mo passive at conservative scale; $500–2,000/mo sponsorship upside at 2k stars.
+
+**Next steps surfaced.**
+- *Tutorial*: "Persistent agent memory with Supabase + pgvector + Claude" — high SEO + first affiliate anchor.
+- *Tutorial*: "RAG on a single machine with SQLite FTS5 + embeddings" — already listed as *Coming soon*.
+- *Template*: `templates/claude-tool-use-starter/` — extract the tutorial's 3 files into a runnable template, add a GitHub deploy-button README.
+- *SEO cornerstone*: "Building production AI agents with Claude — a complete guide" — link all existing content into a single authoritative page.
+- *Snippet*: prompt-versioning pattern with golden-example test harness.
+- *Monetization*: apply to Supabase and Apify affiliate programmes; add "Tools I use" section to main README.
+
 ### 2026-05-13
 
 **Summary.** Added a robust structured-JSON output parser and the
