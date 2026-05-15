@@ -95,3 +95,38 @@ will publish both the original bootstrap commit and this session's commit.
 - *SEO*: write the first cornerstone *guide* (longer than an article,
   shorter than a book) on building production agents. Internal-link
   all existing articles/tutorials/snippets to it.
+
+### 2026-05-15
+
+**Summary.** Added prompt versioning tutorial and companion runner snippet.
+This fills the "Coming soon" item in `tutorials/README.md` and covers
+a genuine pain point for AI engineers: silent prompt regressions.
+
+**Files touched.**
+- New: `tutorials/2026-05-prompt-versioning-with-golden-examples.md`
+- New: `snippets/python/prompt_version_runner.py` (self-test: 9 cases, 0 failures)
+- Edit: `tutorials/README.md` (added to index, removed coming-soon entry)
+- Edit: `snippets/README.md` (added new snippet entry)
+- Edit: `CHANGELOG.md`
+- Edit: `SESSION_LOG.md`
+
+**State.** All self-tests pass locally. Ready to push.
+
+**Monetization / SEO notes.**
+- Prompt versioning + evals is a rising search cluster as teams
+  productionize LLM features. "prompt regression testing" and
+  "golden example LLM eval" have low competition and clear intent.
+- The `--self-test` pattern and CI section make the tutorial very
+  actionable, which drives GitHub stars and repeat visitors.
+- Future angle: a paid "eval harness SaaS" or a CLI tool
+  (e.g., `prompt-eval` on PyPI) that wraps this pattern with a hosted
+  dashboard — fits Phase 6 micro-SaaS path.
+
+**Next steps.**
+- *Tutorial*: RAG on a single machine with SQLite FTS5 + embeddings
+  (still listed as coming soon; high SEO potential).
+- *Snippet*: semantic similarity scorer using sentence-transformers
+  (natural extension of the evaluator; enables fuzzy golden examples).
+- *Workflow*: prompt promotion checklist — how to graduate a prompt
+  from v1 to v2 in a team setting, with review gates.
+- *SEO*: submit prompt-versioning tutorial to r/LLMDevs and dev.to.
