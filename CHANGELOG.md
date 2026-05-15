@@ -60,3 +60,23 @@ released library.
   and the *Agent loop with tool use* workflow note.
 - One-time `.bootstrap/` handoff bundle for pushing the initial commit
   from the user's local machine.
+
+## 2026-05-15
+
+### Added
+- Tutorial: *Prompt versioning with golden examples*
+  (`tutorials/2026-05-prompt-versioning-with-golden-examples.md`).
+  20-minute guide covering versioned prompt files, a golden_examples.json
+  schema with four composable check types, a CI-ready runner script, and
+  a GitHub Actions workflow snippet.
+- Snippet: `snippets/python/prompt_version_runner.py`. Production-ready
+  golden-example test harness: loads versioned `.txt` prompt files, fills
+  `{{variable}}` templates, runs single-turn messages via the Anthropic SDK,
+  and evaluates outputs with exact_match / max_sentences / must_contain_any /
+  must_not_contain checks. Ships with 9 evaluator self-tests (no API key
+  required: `--self-test`). CI-friendly exit codes.
+
+### Changed
+- `tutorials/README.md`: added prompt-versioning tutorial to index;
+  removed "Coming soon" entry for it.
+- `snippets/README.md`: added prompt_version_runner.py entry.
