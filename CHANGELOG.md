@@ -53,6 +53,44 @@ released library.
 - `MONETIZATION.md`: opportunities identified from today's content set.
 - `SESSION_LOG.md`: 2026-05-16 entry added.
 
+
+### Added (afternoon batch)
+- Article: *A field guide to LLM cost engineering*
+  (`articles/2026-05-llm-cost-engineering-field-guide.md`). Six tactics
+  in apply-order with effort/savings numbers; closes the cost+observability
+  cluster.
+- Snippet: `snippets/python/reciprocal_rank_fusion.py` (RRF utility,
+  composable scorers, debug origins).
+- Snippet: `snippets/python/rag_sqlite_starter.py` (runnable RAG companion
+  with hashing-encoder offline mode).
+- Snippet: `snippets/python/prompt_cache_analyzer.py` (cache-hit ratio
+  and USD savings from a JSONL log).
+- Snippet: `snippets/python/diff_summariser.py` (unified-diff parser with
+  risk classification; tested on real `git diff`).
+- Snippet: `snippets/python/llm_changelog_from_git.py` (release notes
+  generator from git history with conventional-commit grouping).
+- Snippet: `snippets/python/code_review_agent.py` (offline rule-based
+  reviewer + Claude agent loop variant).
+- Snippet: `snippets/python/model_router.py` (heuristic router with
+  composable scorers and low-confidence escalation).
+- Snippet: `snippets/python/prompt_compressor.py` (safe + aggressive
+  compression with measurable savings).
+- Snippet: `snippets/python/conversation_compactor.py` (token-budgeted
+  compaction with heuristic summary and recent-turns preservation).
+- Snippet: `snippets/python/browser_automation_skeleton.py` (idempotent
+  action layer with FakeBrowser for offline tests).
+- Cookbook: `cookbook/` with `documentation_search_agent.py`,
+  `eval_on_commit.py`, and `cost_budget_guard.py`. All self-tested.
+- CI: `.github/workflows/tests.yml` (matrix-runs every snippet self-test
+  across Python 3.10-3.12; pins numpy/pydantic/anthropic).
+- CI: `.github/workflows/eval.yml` (runs the eval cookbook on PRs that
+  touch prompts; posts a status comment).
+
+### Changed (afternoon batch)
+- `articles/README.md`: cost engineering article indexed.
+- `snippets/README.md`: ten new snippet entries indexed.
+- `README.md`: latest content refreshed.
+
 ## 2026-05-14
 
 ### Added
