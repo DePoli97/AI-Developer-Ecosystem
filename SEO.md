@@ -55,3 +55,22 @@ SEO is a long game. While it ramps up, distribution comes from sharing on releva
 ## Measurement
 
 Track impressions and clicks per query in Search Console. Track which pages get repeat traffic versus one-time spikes. Track which pages drive newsletter signups (when that exists). Iterate on the queries that are close to ranking but not yet on page one.
+
+## Updated 2026-05-16
+
+The four foundational clusters (see `CONTENT_PLAN.md`) are the spine of the
+SEO plan: Claude agents, prompts-as-code, hybrid retrieval, and cost and
+observability. Each cluster gets a foundational article, a tutorial with
+runnable code, and at least one snippet, so a reader who lands on any one
+piece can navigate to the next without leaving the repository.
+
+Internal linking across clusters is more valuable than absolute volume.
+Where two pieces in different clusters share a primary concern (e.g. the
+cost-engineering article and the hybrid-retrieval workflow both touch
+token budgets), they should cross-link with descriptive anchors.
+
+New long-tail keywords being targeted this month: "claude agent sdk
+quickstart", "sqlite fts5 rag", "reciprocal rank fusion python", "minimal
+eval harness python", "rate limit aware llm client", "anthropic prompt
+cache analysis". Each maps to a specific page or snippet so the search
+intent has a precise landing destination.
