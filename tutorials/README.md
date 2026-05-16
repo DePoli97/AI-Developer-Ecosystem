@@ -8,11 +8,13 @@ Step-by-step guides. Each tutorial gets you from zero to a working result in a s
 
 2026-05 - [Parse structured JSON output from any LLM, reliably](./2026-05-parse-structured-llm-output.md). A 15-minute walkthrough on turning messy LLM responses into validated pydantic objects, with a tested fallback parser and a retry policy that uses the actual error.
 
-2026-05 - [Prompt versioning with golden examples](./2026-05-prompt-versioning-with-golden-examples.md). A 20-minute guide to tracking prompt changes like code — version files, define expected outputs in JSON, and catch regressions in CI before they reach production.
+2026-05 - [Prompt versioning with golden examples](./2026-05-prompt-versioning-with-golden-examples.md). A 20-minute guide to tracking prompt changes like code, version files, define expected outputs in JSON, and catch regressions in CI before they reach production.
+
+2026-05 - [Build a working Claude agent in 20 minutes with the Claude Agent SDK](./2026-05-claude-agent-sdk-quickstart.md). From an empty folder to an agent with file-read, directory-list, and shell tools. Companion snippet ships at `snippets/python/claude_agent_sdk_starter.py`.
 
 ## Coming soon
 
-- A 60-minute RAG starter on a single machine, using SQLite FTS5 plus embeddings.
-- Persistent agent memory with Supabase pgvector.
+- A 60-minute RAG starter on a single machine, using SQLite FTS5 plus embeddings (workflow already published at `workflows/rag-starter-sqlite-fts5.md`; tutorial in progress).
+- A code-review agent built on top of the Agent SDK quickstart.
 
-Topics tracked in `IDEAS.md`.
+Topics tracked in `IDEAS.md` and `CONTENT_PLAN.md`.
