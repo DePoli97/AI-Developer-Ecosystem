@@ -2,6 +2,10 @@
 
 Starter projects you can clone and extend. Each template is opinionated, dependency-pinned, and documented so it can stand on its own as a portfolio piece.
 
+## Index
+
+- [`claude-api-starter/`](./claude-api-starter/) - Minimal Python project for Claude API applications. Typed config, retry-aware client, streaming support, JSONL run logs, CLI entry point, smoke tests.
+
 ## Coming soon
 
 - `claude-tool-use-starter/` - a production-shaped Claude agent loop with structured tool errors, tracing to SQLite, and a small example tool set.
