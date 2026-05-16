@@ -21,6 +21,18 @@ Small, focused code samples. Each one is self-contained, runs as-is (after insta
 - `python/minimal_eval_harness.py` - Sub-200-line eval harness for prompt regression tests. Composable checks (exact, substring, regex, predicate, max-length); async runner; CI-friendly exit code. Ships with a self-test.
 - `python/rate_limit_aware_client.py` - Token-bucket wrapper that smooths bursts to configured RPM and TPM, honours `Retry-After` headers, and applies capped exponential backoff. Provider-agnostic. Ships with a self-test using a fake server.
 
+
+- `python/reciprocal_rank_fusion.py` - Reciprocal Rank Fusion utility with composable result lists and an `rrf_with_origins` debug helper. Self-tested.
+- `python/rag_sqlite_starter.py` - Runnable companion to the RAG starter workflow. Hybrid retrieval (FTS5 + embeddings, RRF fused) in a single SQLite file. Ships with a deterministic hashing encoder so the self-test runs with no heavy dependencies; swap in sentence-transformers for production.
+- `python/prompt_cache_analyzer.py` - Parse a JSONL log of Anthropic responses, compute the cache-hit ratio and USD savings versus the no-cache baseline. CLI + self-test.
+- `python/diff_summariser.py` - Parse a unified diff into structured per-file and per-hunk records, flag risks (sensitive files, binaries, large additions). CLI + self-test.
+- `python/llm_changelog_from_git.py` - Turn `git log` output into Markdown release notes grouped by conventional-commit prefix. Works against real git history; self-tested.
+- `python/code_review_agent.py` - Code-review agent with two modes: an offline rule-based reviewer (no API key needed) and a Claude-powered agent loop. Self-tested in offline mode.
+- `python/model_router.py` - Heuristic model router with composable scorers (length, keyword complexity, explicit override) and a low-confidence escalation policy. Self-tested.
+- `python/prompt_compressor.py` - Mechanical prompt compressor (safe and aggressive modes) that reports characters, words, and approximate tokens saved. Self-tested.
+- `python/conversation_compactor.py` - Keep long agent conversations under a token budget by summarising old turns and keeping the recent ones verbatim. Self-tested with mixed content blocks.
+- `python/browser_automation_skeleton.py` - Idempotent action layer for LLM-driven browsing. Pre/post-condition checks, retry budget, idempotency ledger. Ships with a `FakeBrowser` so the self-test runs without launching Chromium.
+
 ## Conventions
 
 Every snippet in this directory is expected to:
