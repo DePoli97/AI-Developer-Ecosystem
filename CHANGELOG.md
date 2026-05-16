@@ -5,6 +5,54 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-05-16
+
+### Added
+- Tutorial: *Build a working Claude agent in 20 minutes with the Claude
+  Agent SDK* (`tutorials/2026-05-claude-agent-sdk-quickstart.md`).
+  Single-file agent with three sandboxed tools (read_file, list_dir,
+  run_shell), full conversation-loop walkthrough, and a section on the
+  three failure modes that bite first.
+- Snippet: `snippets/python/claude_agent_sdk_starter.py`. Companion code
+  for the quickstart, ready to drop into any project.
+- Snippet: `snippets/python/streaming_response_logger.py`. Streams LLM
+  responses to stdout while writing structured JSONL records (timestamp,
+  model, tokens, USD cost). Offline self-test.
+- Snippet: `snippets/python/minimal_eval_harness.py`. Sub-200-line eval
+  harness with composable checks (exact, substring, regex, predicate,
+  max-length), async runner, and CI-friendly exit code.
+- Snippet: `snippets/python/rate_limit_aware_client.py`. Token-bucket
+  wrapper that smooths bursts to configured RPM and TPM, honours
+  `Retry-After` headers, and applies capped exponential backoff.
+- Workflow: `workflows/rag-starter-sqlite-fts5.md`. Hybrid retrieval
+  (FTS5 + embeddings) in one SQLite file, with RRF fusion, indexing and
+  query code, schema, and a "when to graduate" section.
+- Article: `articles/2026-05-ai-devtools-trends-that-actually-matter.md`.
+  Five trends that are reshaping the stack in 2026, plus three honest
+  "did not pan out" calls.
+- Template: `templates/claude-api-starter/`. Typed env loading, retry-aware
+  Anthropic client, streaming support, JSONL run logs, CLI entry point,
+  smoke tests, dependency manifest.
+- Research: `research/agent-frameworks-landscape-2026-05.md`. Field
+  comparison of seven agent frameworks with recommendations by team
+  profile.
+- `CONTENT_PLAN.md`. Rolling 30-day editorial calendar with topic clusters
+  and metrics to track.
+- Opportunity: `opportunities/product-brief-claude-agent-kit.md`. Brief
+  for a potential paid starter kit, packaging the open-source assets in
+  this repo with a cookbook and support.
+
+### Changed
+- `articles/README.md`, `tutorials/README.md`, `snippets/README.md`,
+  `workflows/README.md`, `templates/README.md`, `research/README.md`: all
+  indices updated with the new entries.
+- `IDEAS.md`: six new entries added under "Added 2026-05-16".
+- `SEO.md`: foundational clusters documented, six new long-tail keywords
+  added.
+- `GROWTH.md`: distribution moments for the new content queued.
+- `MONETIZATION.md`: opportunities identified from today's content set.
+- `SESSION_LOG.md`: 2026-05-16 entry added.
+
 ## 2026-05-14
 
 ### Added
