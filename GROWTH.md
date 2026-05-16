@@ -55,3 +55,18 @@ No engagement farming. No follow-for-follow. No reposting other people's work wi
 ## Measurement
 
 For each release: traffic on day 1, week 1, month 1, month 6. Which channel referred them. How many became repeat readers (sessions over time). How many converted to whatever the call-to-action was for that piece (newsletter signup, GitHub star, repo clone).
+
+## Distribution moments queued (2026-05-16)
+
+Two pieces in the new content set are good HN candidates: the AI devtools
+trends article (broad appeal, opinionated, includes negative calls which
+generate strong discussion) and the agent frameworks landscape research
+note (the comparison format performs well on HN and Lobsters).
+
+The Claude Agent SDK quickstart and the RAG starter workflow are better
+fits for r/ClaudeAI, r/LLMDevs, and r/LocalLLaMA, where readers are
+looking for runnable code. Cross-post to dev.to with canonical links.
+
+The snippets (rate limiter, minimal eval harness, streaming logger) work
+as standalone Twitter/X threads tied to the relevant article. One thread
+per snippet, scheduled across the next two weeks.
