@@ -49,3 +49,27 @@ No scammy affiliate categories. No "make money with AI" funnels, no MLM-adjacent
 ## Tracking
 
 Each monetization experiment should have a clearly defined hypothesis, a small budget of time, and a kill switch. Wins get documented; losses get documented too, so the project does not repeat them.
+
+## Opportunities identified 2026-05-16
+
+The agent frameworks landscape research note is a natural anchor for a
+future "Choosing your agent framework" deep-dive PDF. Audience: tech
+leads evaluating tools for their team. Price point: $19-$29. Funnel:
+the free research note plus the trends article.
+
+The Claude API starter template and the (in-progress) RAG starter both
+fit Tier 4 (templates and starter kits). A polished "production Claude
+agent kit" combining the SDK quickstart, the rate limiter, the streaming
+logger, and the minimal eval harness is a strong $29-$49 package once it
+has the documentation and a demo video.
+
+Affiliate categories worth evaluating: AI-focused IDE plugins (Cursor,
+Continue.dev, Zed), observability platforms with LLM tracing
+(LangSmith, Helicone, Weights & Biases), vector databases for the
+"graduate beyond SQLite" path (Qdrant, Pinecone, pgvector-as-a-service).
+Disclosure remains non-negotiable.
+
+A small, owned newsletter remains the highest-value asset to build over
+2026. The four content clusters provide enough material to launch with
+twelve weeks of pre-written editorial content, which is the right
+inventory before opening the signup form.
