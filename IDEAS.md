@@ -83,3 +83,17 @@ Long-tail queries around "Claude tool use" - low competition, growing volume.
 "Why GPT-X is better than Claude-Y" - tribal, dates poorly, low value.
 
 "AI tools to make you a millionaire" - hard no.
+
+## Added 2026-05-16
+
+LLM-driven changelog generator from git history. Read commit messages over a date range, group by conventional-commit prefix, draft a release note. Likely a workflow plus a 100-line snippet.
+
+A "cost engineering field guide" article that consolidates everything we know about per-request cost reduction: prompt caching, model routing, batched calls, output-token caps, and per-feature token budgets.
+
+A `prompt_cache_analyzer.py` snippet that parses Anthropic responses and reports the actual cache-hit ratio over a window of calls, with a CLI to summarise a JSONL log.
+
+A code-review agent tutorial built on top of the Claude Agent SDK quickstart. Same skeleton, three extra tools (`fetch_pr_diff`, `comment_on_line`, `read_repo_file`), and a system prompt focused on review quality.
+
+A "reciprocal rank fusion in 30 lines" snippet to support the hybrid-retrieval article. Tiny, well-documented, easy to drop into any retrieval system.
+
+A "diff summariser for pull requests" snippet: input is a unified diff, output is a structured summary with risks, breaking-change flags, and reviewer hints. Useful as a building block for the code-review agent.
