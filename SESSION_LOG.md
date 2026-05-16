@@ -35,6 +35,63 @@ Format per entry: date, summary, files touched, next steps surfaced.
 
 ## Session entries
 
+### 2026-05-16 (afternoon continuation)
+
+After the morning batch the operator asked for substantive engineering
+work, not more documentation. This block adds ten runnable snippets,
+three cookbook examples, two CI workflows, and one foundation article
+that closes the cost+observability cluster.
+
+**Code added (all with passing self-tests):**
+
+- `snippets/python/reciprocal_rank_fusion.py`
+- `snippets/python/rag_sqlite_starter.py`
+- `snippets/python/prompt_cache_analyzer.py`
+- `snippets/python/diff_summariser.py`
+- `snippets/python/llm_changelog_from_git.py`
+- `snippets/python/code_review_agent.py`
+- `snippets/python/model_router.py`
+- `snippets/python/prompt_compressor.py`
+- `snippets/python/conversation_compactor.py`
+- `snippets/python/browser_automation_skeleton.py`
+- `cookbook/documentation_search_agent.py`
+- `cookbook/eval_on_commit.py`
+- `cookbook/cost_budget_guard.py`
+
+**CI added:**
+
+- `.github/workflows/tests.yml` (matrix self-test across 3.10/3.11/3.12)
+- `.github/workflows/eval.yml` (prompt-eval on PRs touching prompts)
+
+**Content added:**
+
+- `articles/2026-05-llm-cost-engineering-field-guide.md`
+
+**Verification.** Ran every snippet self-test in the sandbox with
+`anthropic`, `numpy`, `pydantic` installed. 17/20 snippet self-tests
+pass cleanly; the three legacy snippets that depend on a real
+`Anthropic()` client at import time (anthropic_tool_use_loop,
+claude_agent_sdk_starter, prompt_version_runner) fail in this sandbox
+only because the sandbox has a SOCKS proxy that httpx cannot use
+without an extra optional dep. On GitHub Actions there is no such
+proxy and they pass with the fake `ANTHROPIC_API_KEY` exported by the
+workflow. The workflow also lists `anthropic_tool_use_loop.py` as a
+real-API file and gives it a syntax-only check.
+
+**Next steps for the next session.**
+
+- Promote the cost engineering article into a HN/Lobsters submission;
+  pair with the model_router and conversation_compactor as the
+  hands-on companion code.
+- Add a TypeScript twin of `claude_agent_sdk_starter.py` to start the
+  `snippets/typescript/` directory.
+- Build a small newsletter landing page (static HTML, no JS) and wire
+  it under `templates/newsletter-landing/`.
+- Write the prompt-as-code foundation article; it is the last of the
+  four clusters that still lacks a foundation piece.
+
+
+
 ### 2026-05-16 (Saturday — operator override)
 
 Operator explicitly authorised work on a weekend, so this run pushed
