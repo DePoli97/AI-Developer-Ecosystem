@@ -20,11 +20,14 @@ The project is organized around five working areas.
 
 ## Latest content
 
-- **Tutorial** - [Build a working Claude agent in 20 minutes with the Claude Agent SDK](./tutorials/2026-05-claude-agent-sdk-quickstart.md)
+- **Article** - [A field guide to LLM cost engineering](./articles/2026-05-llm-cost-engineering-field-guide.md)
 - **Article** - [Five AI devtools trends that actually matter in 2026](./articles/2026-05-ai-devtools-trends-that-actually-matter.md)
+- **Tutorial** - [Build a working Claude agent in 20 minutes with the Claude Agent SDK](./tutorials/2026-05-claude-agent-sdk-quickstart.md)
 - **Workflow** - [RAG starter, SQLite FTS5 plus embeddings, one machine](./workflows/rag-starter-sqlite-fts5.md)
 - **Template** - [Claude API starter (Python)](./templates/claude-api-starter/)
-- **Snippet** - [Minimal eval harness](./snippets/python/minimal_eval_harness.py)
+- **Cookbook** - [Worked examples wiring the snippets together](./cookbook/)
+- **Snippet** - [Model router](./snippets/python/model_router.py), [Prompt compressor](./snippets/python/prompt_compressor.py), [Conversation compactor](./snippets/python/conversation_compactor.py)
+- **Snippet** - [Browser automation skeleton](./snippets/python/browser_automation_skeleton.py)
 - **Research** - [Agent frameworks landscape, May 2026](./research/agent-frameworks-landscape-2026-05.md)
 
 Earlier highlights remain in [`CHANGELOG.md`](./CHANGELOG.md).
