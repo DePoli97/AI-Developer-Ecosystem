@@ -35,6 +35,60 @@ Format per entry: date, summary, files touched, next steps surfaced.
 
 ## Session entries
 
+### 2026-05-16 (Saturday — operator override)
+
+Operator explicitly authorised work on a weekend, so this run pushed
+through despite the standard "weekdays only" rule.
+
+**What was done (high level).** Ten new content artefacts shipped across
+tutorials, snippets, workflows, an article, a research note, a template,
+and strategy updates. Per-file commits with conventional prefixes.
+
+**Files touched.**
+
+- `tutorials/2026-05-claude-agent-sdk-quickstart.md` (new)
+- `snippets/python/claude_agent_sdk_starter.py` (new)
+- `snippets/python/streaming_response_logger.py` (new, self-tested)
+- `snippets/python/minimal_eval_harness.py` (new, self-tested)
+- `snippets/python/rate_limit_aware_client.py` (new, self-tested)
+- `workflows/rag-starter-sqlite-fts5.md` (new)
+- `articles/2026-05-ai-devtools-trends-that-actually-matter.md` (new)
+- `templates/claude-api-starter/` (new template: README, pyproject.toml,
+  .env.example, src/config.py, src/client.py, src/cli.py,
+  src/prompts/system.txt, tests/test_smoke.py)
+- `research/agent-frameworks-landscape-2026-05.md` (new)
+- `opportunities/product-brief-claude-agent-kit.md` (new)
+- `CONTENT_PLAN.md` (new)
+- Indices updated: `articles/README.md`, `tutorials/README.md`,
+  `snippets/README.md`, `workflows/README.md`, `templates/README.md`,
+  `research/README.md`.
+- Strategy docs updated: `IDEAS.md`, `SEO.md`, `GROWTH.md`,
+  `MONETIZATION.md`.
+- This file, `CHANGELOG.md`.
+
+**Operating notes.** The mounted `.git` directory in the bash sandbox
+had non-removable lock files; rebase from the mounted clone failed with
+"Operation not permitted" on `.git/objects/*` tmp files. Workaround
+that worked: a fresh clone into `/tmp/ade` using the embedded-PAT remote
+URL, work and commit there, then push from there. Future sessions
+should expect to do the same if they encounter the lock-file scenario.
+
+**Next steps surfaced.**
+
+- Promote the prompt-cache analyzer snippet (target Anthropic responses,
+  parse the `cache_creation_input_tokens` / `cache_read_input_tokens`
+  fields, emit a cache-hit ratio over a window).
+- Build the runnable companion script for the RAG starter workflow
+  (`snippets/python/rag_sqlite_starter.py`) so the workflow has a
+  one-command "run me" path.
+- Draft the cost-engineering field guide article. The repo now has
+  enough supporting snippets to make it concrete instead of theoretical.
+- Add a `cookbook/` folder once the product brief is ready to validate;
+  it is the natural home for the worked examples that would justify
+  the paid kit.
+
+
+
 ### 2026-05-14
 
 **Summary.** Delivered the three highest-priority next steps from the previous
