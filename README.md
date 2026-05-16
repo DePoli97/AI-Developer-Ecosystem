@@ -20,10 +20,14 @@ The project is organized around five working areas.
 
 ## Latest content
 
-- **Tutorial** - [Parse structured JSON output from any LLM, reliably](./tutorials/2026-05-parse-structured-llm-output.md)
-- **Article** - [A practical guide to Claude tool use](./articles/2026-05-claude-tool-use-practical-guide.md)
-- **Workflow** - [Agent loop with tool use](./workflows/agent-loop-with-tool-use.md)
-- **Snippet** - [Robust structured-JSON output parser](./snippets/python/structured_json_output.py)
+- **Tutorial** - [Build a working Claude agent in 20 minutes with the Claude Agent SDK](./tutorials/2026-05-claude-agent-sdk-quickstart.md)
+- **Article** - [Five AI devtools trends that actually matter in 2026](./articles/2026-05-ai-devtools-trends-that-actually-matter.md)
+- **Workflow** - [RAG starter, SQLite FTS5 plus embeddings, one machine](./workflows/rag-starter-sqlite-fts5.md)
+- **Template** - [Claude API starter (Python)](./templates/claude-api-starter/)
+- **Snippet** - [Minimal eval harness](./snippets/python/minimal_eval_harness.py)
+- **Research** - [Agent frameworks landscape, May 2026](./research/agent-frameworks-landscape-2026-05.md)
+
+Earlier highlights remain in [`CHANGELOG.md`](./CHANGELOG.md).
 
 ## How to use this repository
 
@@ -39,6 +43,7 @@ The strategic direction, growth plan, and monetization thinking live in dedicate
 - `GROWTH.md` - distribution and audience growth.
 - `IDEAS.md` - the backlog of things worth exploring.
 - `CHANGELOG.md` - notable changes, in reverse chronological order.
+- `CONTENT_PLAN.md` - rolling 30-day editorial calendar.
 - `CONTRIBUTING.md` - how to contribute and the editorial standards.
 
 ## License
