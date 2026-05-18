@@ -16,7 +16,7 @@ The plan is reviewed every Monday. Completed items move to
 | 1    | Snippet   | Diff-summariser for git pull requests                          | llm git diff summary             | snippets/python/diff_summariser.py                                         |
 | 2    | Article   | A field guide to LLM cost engineering                          | llm cost optimization            | articles/2026-05-llm-cost-engineering-field-guide.md                       |
 | 2    | Snippet   | Prompt cache analyzer for Anthropic responses                  | anthropic prompt cache           | snippets/python/prompt_cache_analyzer.py                                   |
-| 3    | Tutorial  | RAG starter end-to-end (runnable script)                       | sqlite fts5 embeddings rag       | tutorials/2026-05-rag-starter-runnable.md + snippets/python/rag_sqlite_starter.py |
+| 3    | Tutorial  | RAG starter end-to-end (runnable script) - DONE 2026-05-18     | sqlite fts5 embeddings rag       | tutorials/2026-05-rag-starter-runnable.md + snippets/python/rag_sqlite_starter.py |
 | 3    | Workflow  | LLM-driven changelog generator from commit history             | automated changelog generator    | workflows/llm-changelog-from-git.md                                        |
 | 4    | Article   | What hybrid retrieval actually buys you (with numbers)         | hybrid retrieval bm25 embeddings | articles/2026-05-hybrid-retrieval-numbers.md                               |
 | 4    | Snippet   | Reciprocal rank fusion as a 30-line utility                    | reciprocal rank fusion python    | snippets/python/reciprocal_rank_fusion.py                                  |
@@ -50,8 +50,8 @@ article pending.
 
 The third cluster is **retrieval**. Foundation: a hybrid retrieval article
 backed by numbers. Tutorial: a runnable RAG starter. Workflow: the SQLite
-FTS5 plus embeddings write-up. Status: workflow shipped; tutorial and
-foundation article pending.
+FTS5 plus embeddings write-up. Status: workflow and tutorial shipped;
+foundation article (hybrid retrieval, with numbers) pending.
 
 The fourth cluster is **cost and observability**. Foundation: a cost
 engineering field guide. Tutorial: a streaming logger walkthrough. Snippet:
