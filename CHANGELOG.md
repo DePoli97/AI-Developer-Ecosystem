@@ -5,6 +5,36 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-05-18
+
+### Added
+- Tutorial: *Build a runnable RAG starter in 30 minutes, SQLite FTS5 +
+  embeddings* (`tutorials/2026-05-rag-starter-runnable.md`). Step-by-step
+  walkthrough that pairs the existing workflow and snippet: clone, run
+  the self-test, install sentence-transformers, ingest Markdown, query
+  with hybrid retrieval, and wire a grounded LLM answer with citations.
+  Closes the CONTENT_PLAN slot for the retrieval cluster's tutorial.
+- Snippet: `snippets/python/pii_redactor.py`. Dependency-free PII redactor
+  with reversible tokenisation. Detects emails, phones, IPv4 addresses,
+  US SSNs, Luhn-validated credit-card numbers, and AWS access keys.
+  Stateful so placeholders stay stable across calls in long conversations.
+  Ships with an offline self-test (8 checks, all passing) and a CLI for
+  both redaction and unredaction.
+
+### Changed
+- `README.md` - latest content list updated with the RAG tutorial and the
+  PII redactor.
+- `tutorials/README.md` - new tutorial indexed; the RAG entry moved out
+  of "Coming soon".
+- `snippets/README.md` - PII redactor entry added.
+- `CONTENT_PLAN.md` - retrieval-cluster tutorial slot marked done;
+  cluster status line updated (foundation article still pending).
+
+### Added
+- Research note: `research/2026-05-18-pii-redaction-landscape.md`. Field
+  notes on the trade-offs between rolling your own redactor, using a
+  cloud DLP, and dedicated tools like Microsoft Presidio.
+
 ## 2026-05-16
 
 ### Added
