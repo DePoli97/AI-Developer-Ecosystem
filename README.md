@@ -22,6 +22,8 @@ The project is organized around five working areas.
 
 - **Article** - [A field guide to LLM cost engineering](./articles/2026-05-llm-cost-engineering-field-guide.md)
 - **Article** - [Five AI devtools trends that actually matter in 2026](./articles/2026-05-ai-devtools-trends-that-actually-matter.md)
+- **Tutorial** - [Build a runnable RAG starter in 30 minutes, SQLite FTS5 + embeddings](./tutorials/2026-05-rag-starter-runnable.md)
+- **Snippet** - [PII redactor with reversible tokenisation](./snippets/python/pii_redactor.py)
 - **Tutorial** - [Build a working Claude agent in 20 minutes with the Claude Agent SDK](./tutorials/2026-05-claude-agent-sdk-quickstart.md)
 - **Workflow** - [RAG starter, SQLite FTS5 plus embeddings, one machine](./workflows/rag-starter-sqlite-fts5.md)
 - **Template** - [Claude API starter (Python)](./templates/claude-api-starter/)
