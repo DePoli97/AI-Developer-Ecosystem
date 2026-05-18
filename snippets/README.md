@@ -32,6 +32,7 @@ Small, focused code samples. Each one is self-contained, runs as-is (after insta
 - `python/prompt_compressor.py` - Mechanical prompt compressor (safe and aggressive modes) that reports characters, words, and approximate tokens saved. Self-tested.
 - `python/conversation_compactor.py` - Keep long agent conversations under a token budget by summarising old turns and keeping the recent ones verbatim. Self-tested with mixed content blocks.
 - `python/browser_automation_skeleton.py` - Idempotent action layer for LLM-driven browsing. Pre/post-condition checks, retry budget, idempotency ledger. Ships with a `FakeBrowser` so the self-test runs without launching Chromium.
+- `python/pii_redactor.py` - Dependency-free PII redactor with reversible tokenisation. Detects emails, phones, IPv4 addresses, US SSNs, Luhn-validated credit-card numbers, and AWS access keys. Stable placeholders across calls so model output can be unredacted before reaching the user. CLI + self-test (no API key required).
 
 ## Conventions
 
