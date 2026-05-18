@@ -241,3 +241,66 @@ a genuine pain point for AI engineers: silent prompt regressions.
 - *Workflow*: prompt promotion checklist — how to graduate a prompt
   from v1 to v2 in a team setting, with review gates.
 - *SEO*: submit prompt-versioning tutorial to r/LLMDevs and dev.to.
+
+### 2026-05-18
+
+**Summary.** Closed the retrieval cluster's tutorial slot from
+`CONTENT_PLAN.md` by shipping a runnable RAG starter walkthrough that
+pairs the existing workflow + snippet (no new heavy code, high SEO
+value, leverages assets that were already in the repo). Added a
+practical PII redactor snippet with a passing offline self-test, plus
+a research field note on the redaction landscape that points at the
+most plausible monetisation path out of that snippet.
+
+**Files touched.**
+- New: `tutorials/2026-05-rag-starter-runnable.md` (30-min end-to-end
+  walkthrough: clone, self-test, ingest Markdown, hybrid retrieval
+  query, grounded LLM answer with citations).
+- New: `snippets/python/pii_redactor.py` (320 lines, std-lib only,
+  Luhn-validated cards, stable reversible placeholders, CLI + 8 self-
+  test checks all passing).
+- New: `research/2026-05-18-pii-redaction-landscape.md` (where to put
+  redaction in an LLM pipeline; roll-your-own vs Presidio vs cloud DLP
+  vs commercial vaults; monetisation angle).
+- Edit: `README.md` (latest content list).
+- Edit: `tutorials/README.md` (indexed new tutorial; removed RAG from
+  Coming Soon).
+- Edit: `snippets/README.md` (indexed `pii_redactor.py`).
+- Edit: `research/README.md` (indexed new field note).
+- Edit: `CONTENT_PLAN.md` (RAG tutorial row marked DONE; retrieval
+  cluster status updated to "workflow and tutorial shipped").
+- Edit: `CHANGELOG.md` (2026-05-18 section).
+
+**State.** Self-tests pass locally. Working tree clean before the
+per-file commits described below. Repo was in a stuck rebase state on
+the macOS-side virtiofs mount (`.git/index.lock` un-removable) so this
+session worked from a fresh `git clone` of `origin/main` in the bash
+sandbox and pushed from there. The host-side repo will need a manual
+`git pull --rebase` (or a `git reset --hard origin/main` after backing
+up the lone divergent commit `358c3a5`) the next time the user opens
+it on their laptop.
+
+**Monetisation / SEO notes.**
+- RAG-on-SQLite content has stable long-tail intent (`sqlite fts5
+  embeddings rag`, `local rag laptop`, `rag without vector database`).
+  The tutorial closes the keyword loop opened by the workflow.
+- The `pii_redactor.py` snippet is the natural front door to a paid
+  product (hosted gateway, `pii-guard` PyPI CLI, or a paid pattern
+  pack per locale). The research note documents the path; nothing
+  shipped today commits us to it.
+- Cross-link opportunity for next session: the RAG tutorial and the
+  cost engineering field guide both have a natural footer link into
+  each other ("RAG that pays for itself" angle).
+
+**Next steps surfaced.**
+- *Article*: foundation piece for the retrieval cluster - "Hybrid
+  retrieval, with numbers" (planned in CONTENT_PLAN; the snippet +
+  workflow + tutorial all link back to it once written).
+- *Snippet*: a `cross_encoder_reranker.py` to extend the RAG starter
+  with a second-stage re-ranking pass.
+- *Tutorial*: companion to `pii_redactor.py` - "Wrap your LLM gateway
+  with PII redaction in 10 minutes" - good for the cost/observability
+  cluster.
+- *Opportunity*: write a one-pager under `opportunities/` for the
+  hosted `pii-guard` gateway idea (target price, target user, MVP
+  scope, time-to-value).
