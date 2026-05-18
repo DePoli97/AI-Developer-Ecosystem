@@ -12,9 +12,10 @@ Step-by-step guides. Each tutorial gets you from zero to a working result in a s
 
 2026-05 - [Build a working Claude agent in 20 minutes with the Claude Agent SDK](./2026-05-claude-agent-sdk-quickstart.md). From an empty folder to an agent with file-read, directory-list, and shell tools. Companion snippet ships at `snippets/python/claude_agent_sdk_starter.py`.
 
+2026-05 - [Build a runnable RAG starter in 30 minutes, SQLite FTS5 + embeddings](./2026-05-rag-starter-runnable.md). Index a folder of Markdown, run hybrid retrieval (lexical + embeddings + RRF), and wire a grounded LLM answer on top. Companion to the existing `workflows/rag-starter-sqlite-fts5.md` and `snippets/python/rag_sqlite_starter.py`.
+
 ## Coming soon
 
-- A 60-minute RAG starter on a single machine, using SQLite FTS5 plus embeddings (workflow already published at `workflows/rag-starter-sqlite-fts5.md`; tutorial in progress).
 - A code-review agent built on top of the Agent SDK quickstart.
 
 Topics tracked in `IDEAS.md` and `CONTENT_PLAN.md`.
