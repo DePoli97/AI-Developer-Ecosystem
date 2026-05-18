@@ -5,6 +5,7 @@ A scratchpad for notes on AI / devtools trends, market gaps, and observations th
 ## Index
 
 - [`agent-frameworks-landscape-2026-05.md`](./agent-frameworks-landscape-2026-05.md) - Field comparison of the agent frameworks worth considering for production work, with recommendations by team profile.
+- [`2026-05-18-pii-redaction-landscape.md`](./2026-05-18-pii-redaction-landscape.md) - Where redaction should sit in an LLM pipeline, the realistic options in May 2026 (roll-your-own, Presidio, cloud DLP, commercial vaults), and the most plausible monetisation path out of the new `pii_redactor.py` snippet.
 
 ## Open notes
 
