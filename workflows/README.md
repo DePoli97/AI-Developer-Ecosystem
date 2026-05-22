@@ -6,3 +6,4 @@ Reusable AI workflows: patterns and recipes that go beyond a single function. Ea
 
 - [`agent-loop-with-tool-use.md`](./agent-loop-with-tool-use.md) - The shape of a production-ready Claude agent loop, with hard step limits and structured tool errors.
 - [`rag-starter-sqlite-fts5.md`](./rag-starter-sqlite-fts5.md) - Hybrid retrieval (FTS5 + embeddings) in a single SQLite file, with reciprocal rank fusion. Runs on a laptop; upgrades cleanly to pgvector or Qdrant when needed.
+- [`llm-changelog-from-git.md`](./llm-changelog-from-git.md) - Deterministic release notes from `git log`, with an optional LLM polish pass. Pairs with `snippets/python/llm_changelog_from_git.py`.
