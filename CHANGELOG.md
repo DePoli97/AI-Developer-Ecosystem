@@ -5,6 +5,39 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-05-20
+
+### Added
+- Article: *Hybrid retrieval, with numbers*
+  (`articles/2026-05-hybrid-retrieval-numbers.md`). Foundation piece of
+  the retrieval cluster, with concrete nDCG@10 / MRR numbers from a 30-
+  document corpus and six labelled queries. Honest reporting: when fusion
+  helps, when it averages-out a strong dense signal, and the simple
+  decision rule for whether to add a cross-encoder reranker. Cross-links
+  the RRF snippet, the reranker snippet, the RAG workflow, and the RAG
+  starter tutorial.
+- Snippet: `snippets/python/cross_encoder_reranker.py`. Second-stage
+  cross-encoder reranker for RAG. Pluggable scorer interface (default is
+  a deterministic mock so self-tests run offline; optional
+  `sentence_transformers_scorer` for production). Returns `Hit`
+  dataclasses carrying both stage-one and stage-two ranks for regression
+  debugging. Self-tested (6 checks, all passing).
+- Opportunity brief: `opportunities/product-brief-pii-guard.md`. Three-
+  tier monetisation plan for the existing `pii_redactor.py` snippet:
+  free PyPI library, paid locale pattern packs, paid self-hosted +
+  hosted proxy. Decision: ship the PyPI package only after one external
+  inbound link; defer the rest behind a 500-weekly-download trigger.
+
+### Changed
+- `README.md` - latest content list updated with the hybrid retrieval
+  article and the cross-encoder reranker snippet.
+- `articles/README.md` - hybrid retrieval article indexed.
+- `snippets/README.md` - cross-encoder reranker entry added.
+- `opportunities/README.md` - pii-guard slot added (item 5).
+- `CONTENT_PLAN.md` - hybrid retrieval article and reranker snippet
+  marked done; retrieval cluster status set to complete with the next
+  additions surfaced.
+
 ## 2026-05-18
 
 ### Added
