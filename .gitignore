@@ -52,3 +52,7 @@ secrets/
 
 # Leftover sandbox probe file - safe to delete manually
 test.txt
+
+# Session staging area - bundle files prepared by autonomous runs
+# that need a manual push from the host. Do not commit.
+.session-pending/
