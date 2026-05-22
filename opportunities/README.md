@@ -34,6 +34,14 @@ Evidence: content already references these tools; audience intent is high; recur
 
 Next step: apply to Supabase and Apify affiliate programmes. Write the "Persistent agent memory with Supabase" tutorial as the first affiliate-anchored piece. Full analysis in [`affiliate-devtools-shortlist.md`](./affiliate-devtools-shortlist.md).
 
+## 5. pii-guard — PII redaction layer for LLM gateways
+
+Hypothesis: B2B teams shipping LLM features need a drop-in PII redaction layer before they can pass a security review. The space between "a regex with a name" and "$30k/year enterprise platform" is poorly served, and a library + locale pattern packs + a self-hosted proxy can occupy it.
+
+Evidence: the existing `pii_redactor.py` snippet works and is std-lib only; the [research note](../research/2026-05-18-pii-redaction-landscape.md) documents the buy/build gap; recurring compliance line item means high LTV.
+
+Next step: ship the standalone `pii-guard` PyPI package as a thin wrapper around the snippet (one weekend); only build pattern packs and the proxy after the package crosses 500 weekly downloads. Full brief in [`product-brief-pii-guard.md`](./product-brief-pii-guard.md).
+
 ## Process
 
 An opportunity stays here only while it has a defined next step. Once it ships, it moves into `ROADMAP.md`. Once it is killed, it gets a one-line obituary so the project does not retry it without reason.
