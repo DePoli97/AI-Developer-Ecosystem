@@ -35,6 +35,57 @@ Format per entry: date, summary, files touched, next steps surfaced.
 
 ## Session entries
 
+### 2026-05-22
+
+**Summary.** Closed the Week 3 workflow slot from `CONTENT_PLAN.md` by
+shipping the companion document for the existing
+`snippets/python/llm_changelog_from_git.py`. Pure documentation work
+that turns an already-shipped snippet into a discoverable workflow with
+a SEO-friendly primary keyword (*automated changelog generator*).
+Also recovered the 12 pending commits from the 2026-05-20 session that
+were stuck in the local working tree (the host repo's `.git/index.lock`
+was un-removable from the sandbox, so the work was redone in a fresh
+clone at `/tmp/ai-dev-fresh`).
+
+**Files touched.**
+- New: `workflows/llm-changelog-from-git.md` (196 lines, complete
+  workflow document with copy-paste release script and CI check).
+- Edit: `workflows/README.md` (indexed new workflow).
+- Edit: `README.md` (latest content list).
+- Edit: `CONTENT_PLAN.md` (Week 3 workflow row marked DONE).
+- Edit: `CHANGELOG.md` (2026-05-22 section).
+- Edit: this file.
+- Recovered (from 2026-05-20 session): 12 commits covering the
+  hybrid retrieval article, cross-encoder reranker snippet, pii-guard
+  brief, and supporting README/plan/log edits.
+
+**State.** Self-test of the companion snippet passes locally. The
+sandbox cannot push (no GitHub credentials, remote URL is token-less).
+Commits prepared in `/tmp/ai-dev-fresh` and packaged into a bundle
+under `.session-pending/` for the user to push via `./.push-pending.sh`
+from the Mac.
+
+**Monetisation / SEO notes.**
+- The keyword *automated changelog generator* has stable, long-tail
+  intent from teams setting up release processes. The workflow doc is
+  the first asset in the repo targeting that exact phrase; the
+  companion snippet was previously orphaned from search intent.
+- Cross-link opportunity: the LLM-polish section of the new workflow
+  naturally links into the cost engineering field guide (
+  *"why not LLM-by-default"*).
+
+**Next steps surfaced.**
+- *Tutorial*: companion to `pii_redactor.py` - "Wrap your LLM gateway
+  with PII redaction in 10 minutes" (still pending from last session).
+- *Snippet*: Prompt cache analyzer for Anthropic responses (Week 2 slot
+  in CONTENT_PLAN).
+- *Article foundation*: an "LLM observability without a platform" piece
+  to anchor the next cluster, pulling together the streaming logger,
+  cost estimator and prompt cache analyzer snippets.
+- *Decision pending*: whether to ship the `pii-guard` PyPI package
+  (gated on at least one external inbound link to
+  `snippets/python/pii_redactor.py`).
+
 ### 2026-05-20
 
 **Summary.** Closed the retrieval cluster's foundation slot. Shipped the
