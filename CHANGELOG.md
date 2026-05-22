@@ -5,6 +5,24 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-05-22
+
+### Added
+- Workflow: *Automated changelog generator, from git log to release notes*
+  (`workflows/llm-changelog-from-git.md`). Companion document to the
+  existing `snippets/python/llm_changelog_from_git.py`. Describes the
+  deterministic two-piece pipeline (parser + renderer), a copy-paste
+  release script, a one-line CI check for conventional commits, and an
+  optional LLM polish pass with a diff-and-fall-back safety step.
+  Closes the Week 3 workflow slot in `CONTENT_PLAN.md`. Primary
+  keyword: *automated changelog generator*.
+
+### Changed
+- `README.md` - latest content list now leads with the changelog
+  workflow.
+- `workflows/README.md` - indexed the new workflow.
+- `CONTENT_PLAN.md` - Week 3 workflow row marked DONE.
+
 ## 2026-05-20
 
 ### Added
