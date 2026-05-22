@@ -20,6 +20,8 @@ The project is organized around five working areas.
 
 ## Latest content
 
+- **Article** - [Hybrid retrieval, with numbers](./articles/2026-05-hybrid-retrieval-numbers.md)
+- **Snippet** - [Cross-encoder reranker for RAG](./snippets/python/cross_encoder_reranker.py)
 - **Article** - [A field guide to LLM cost engineering](./articles/2026-05-llm-cost-engineering-field-guide.md)
 - **Article** - [Five AI devtools trends that actually matter in 2026](./articles/2026-05-ai-devtools-trends-that-actually-matter.md)
 - **Tutorial** - [Build a runnable RAG starter in 30 minutes, SQLite FTS5 + embeddings](./tutorials/2026-05-rag-starter-runnable.md)
