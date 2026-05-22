@@ -17,7 +17,7 @@ The plan is reviewed every Monday. Completed items move to
 | 2    | Article   | A field guide to LLM cost engineering                          | llm cost optimization            | articles/2026-05-llm-cost-engineering-field-guide.md                       |
 | 2    | Snippet   | Prompt cache analyzer for Anthropic responses                  | anthropic prompt cache           | snippets/python/prompt_cache_analyzer.py                                   |
 | 3    | Tutorial  | RAG starter end-to-end (runnable script) - DONE 2026-05-18     | sqlite fts5 embeddings rag       | tutorials/2026-05-rag-starter-runnable.md + snippets/python/rag_sqlite_starter.py |
-| 3    | Workflow  | LLM-driven changelog generator from commit history             | automated changelog generator    | workflows/llm-changelog-from-git.md                                        |
+| 3    | Workflow  | LLM-driven changelog generator from commit history - DONE 2026-05-22 | automated changelog generator    | workflows/llm-changelog-from-git.md                                        |
 | 4    | Article   | What hybrid retrieval actually buys you (with numbers) - DONE 2026-05-20 | hybrid retrieval bm25 embeddings | articles/2026-05-hybrid-retrieval-numbers.md                               |
 | 4    | Snippet   | Reciprocal rank fusion as a 30-line utility                    | reciprocal rank fusion python    | snippets/python/reciprocal_rank_fusion.py                                  |
 | 5    | Snippet   | Cross-encoder reranker (stage-two RAG ranking) - DONE 2026-05-20 | cross encoder reranker rag       | snippets/python/cross_encoder_reranker.py                                  |
