@@ -33,6 +33,7 @@ Small, focused code samples. Each one is self-contained, runs as-is (after insta
 - `python/conversation_compactor.py` - Keep long agent conversations under a token budget by summarising old turns and keeping the recent ones verbatim. Self-tested with mixed content blocks.
 - `python/browser_automation_skeleton.py` - Idempotent action layer for LLM-driven browsing. Pre/post-condition checks, retry budget, idempotency ledger. Ships with a `FakeBrowser` so the self-test runs without launching Chromium.
 - `python/pii_redactor.py` - Dependency-free PII redactor with reversible tokenisation. Detects emails, phones, IPv4 addresses, US SSNs, Luhn-validated credit-card numbers, and AWS access keys. Stable placeholders across calls so model output can be unredacted before reaching the user. CLI + self-test (no API key required).
+- `python/cross_encoder_reranker.py` - Second-stage cross-encoder reranker for RAG. Pluggable scorer interface, deterministic mock scorer for offline self-tests, optional `sentence_transformers_scorer()` for production. Returns `Hit` dataclasses with stage-one and stage-two ranks so regressions are debuggable. Companion to the hybrid retrieval article and the RAG starter tutorial.
 
 ## Conventions
 
