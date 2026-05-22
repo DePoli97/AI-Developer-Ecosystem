@@ -20,6 +20,7 @@ The project is organized around five working areas.
 
 ## Latest content
 
+- **Workflow** - [Automated changelog generator, from git log to release notes](./workflows/llm-changelog-from-git.md)
 - **Article** - [Hybrid retrieval, with numbers](./articles/2026-05-hybrid-retrieval-numbers.md)
 - **Snippet** - [Cross-encoder reranker for RAG](./snippets/python/cross_encoder_reranker.py)
 - **Article** - [A field guide to LLM cost engineering](./articles/2026-05-llm-cost-engineering-field-guide.md)
