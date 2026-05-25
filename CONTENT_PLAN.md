@@ -53,9 +53,11 @@ The third cluster is **retrieval**. Foundation: a hybrid retrieval article
 backed by numbers. Tutorial: a runnable RAG starter. Workflow: the SQLite
 FTS5 plus embeddings write-up. Snippets: `reciprocal_rank_fusion.py`,
 `rag_sqlite_starter.py`, `cross_encoder_reranker.py`. Status: complete.
-Next addition: a short tutorial on building the 50-query gold set, plus
-the companion to the reranker snippet ("when to add a reranker, with
-numbers" walk-through).
+The 50-query gold-set tutorial shipped 2026-05-25 at
+`tutorials/2026-05-build-rag-eval-gold-set.md` with the harness at
+`snippets/python/rag_eval_gold_set.py`. Next addition: the companion to
+the reranker snippet ("when to add a reranker, with numbers"
+walk-through).
 
 The fourth cluster is **cost and observability**. Foundation: a cost
 engineering field guide. Tutorial: a streaming logger walkthrough. Snippet:
