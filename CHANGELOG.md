@@ -5,6 +5,40 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-05-25
+
+### Added
+- Tutorial: *Build a 50-query gold set for your RAG system*
+  (`tutorials/2026-05-build-rag-eval-gold-set.md`). End-to-end walkthrough
+  of the hand-labelling and measurement loop: where to source real
+  queries (production logs, support tickets, Slack), how to pool
+  candidates for fast labelling, the JSON schema to commit, and the
+  variance-aware regression check that prevents "average went up, ten
+  queries got worse" merges. Closes the retrieval-cluster gold-set gap
+  flagged in `CONTENT_PLAN.md`. Primary keyword: *rag evaluation gold
+  set*.
+- Snippet: `snippets/python/rag_eval_gold_set.py`. Sub-200-line
+  evaluation harness. Loads the gold set, runs an arbitrary dict of
+  retriever callables (`retrieve(query, k) -> list[str]`), reports
+  averaged nDCG@10 and MRR, and surfaces the worst per-query
+  regressions for triage. Zero third-party dependencies; ships with a
+  self-test that runs perfect, baseline, and broken retrievers against
+  a fixture gold set.
+
+### Changed
+- `README.md` - latest content list now leads with the gold-set
+  tutorial and harness.
+- `tutorials/README.md` and `snippets/README.md` - indexed the new
+  entries.
+- `CONTENT_PLAN.md` - retrieval-cluster note updated; the gold-set
+  tutorial is marked shipped.
+
+### Fixed
+- `.push-pending.sh` - resolved a stale merge-conflict block left over
+  from a prior session; kept the LaunchAgent-friendly version (idempotent
+  re-runs, auto-stash, structured logging) that pairs with
+  `.launchd/com.depoli.ai-dev-push.plist`.
+
 ## 2026-05-22
 
 ### Added
