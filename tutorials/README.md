@@ -14,6 +14,8 @@ Step-by-step guides. Each tutorial gets you from zero to a working result in a s
 
 2026-05 - [Build a runnable RAG starter in 30 minutes, SQLite FTS5 + embeddings](./2026-05-rag-starter-runnable.md). Index a folder of Markdown, run hybrid retrieval (lexical + embeddings + RRF), and wire a grounded LLM answer on top. Companion to the existing `workflows/rag-starter-sqlite-fts5.md` and `snippets/python/rag_sqlite_starter.py`.
 
+2026-05 - [Build a 50-query gold set for your RAG system](./2026-05-build-rag-eval-gold-set.md). The hand-labelling and measurement loop that turns every retrieval change into a number. Companion snippet at `snippets/python/rag_eval_gold_set.py` with a self-tested nDCG@10 + MRR harness.
+
 ## Coming soon
 
 - A code-review agent built on top of the Agent SDK quickstart.
