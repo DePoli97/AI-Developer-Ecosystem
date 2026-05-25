@@ -35,6 +35,63 @@ Format per entry: date, summary, files touched, next steps surfaced.
 
 ## Session entries
 
+### 2026-05-25
+
+**Summary.** Closed the gold-set gap in the retrieval cluster. Shipped a
+hands-on tutorial on building a 50-query gold set (sourcing real queries,
+pooling for fast labelling, a two-level relevance scheme, the JSON
+schema to commit, and the variance-aware regression check) plus a
+companion sub-200-line evaluation harness with zero third-party
+dependencies. Also resolved a stale merge-conflict block in
+`.push-pending.sh` (kept the LaunchAgent-friendly version paired with
+`.launchd/com.depoli.ai-dev-push.plist`).
+
+**Files touched.**
+- New: `tutorials/2026-05-build-rag-eval-gold-set.md` (~240 lines,
+  practical walkthrough with copy-paste evaluation code, JSON schema
+  example, and explicit "skip on the first pass" section to prevent
+  overengineering).
+- New: `snippets/python/rag_eval_gold_set.py` (215 lines, std-lib only,
+  self-test passing with perfect/baseline/broken reference retrievers).
+- Edit: `tutorials/README.md`, `snippets/README.md` (indexed the new
+  entries).
+- Edit: `README.md` (latest content list now leads with the gold-set
+  tutorial and harness).
+- Edit: `CONTENT_PLAN.md` (retrieval-cluster note updated; gold-set
+  tutorial marked shipped).
+- Edit: `CHANGELOG.md` (2026-05-25 section).
+- Fix: `.push-pending.sh` (resolved git merge conflict markers).
+- Edit: this file.
+
+**State.** Self-test of `rag_eval_gold_set.py` passes locally
+(perfect=1.000, broken=0.000, baseline regressions printed correctly).
+Working tree clean after commit. Ready to push.
+
+**Monetisation / SEO notes.**
+- The keyword cluster *rag evaluation*, *rag gold set*, *retrieval
+  evaluation harness* is undermonetised in the existing landscape: most
+  results are vendor blog posts that pitch the vendor's hosted eval
+  product. A practical hand-labelling walkthrough with code is a clean
+  organic fit and slots naturally into the existing retrieval-cluster
+  cross-links.
+- Cross-sell into the future "when to add a reranker, with numbers"
+  walk-through: that piece needs a gold set to be credible, so the new
+  tutorial is the prerequisite link.
+- Potential product extension: a small CLI (`rag-eval`) that wraps the
+  harness and adds a per-query HTML report. Defer until the snippet
+  accrues at least one external inbound link.
+
+**Next steps surfaced.**
+- *Article*: "When to add a reranker, with numbers" - the missing
+  companion to `cross_encoder_reranker.py`, now unblocked by the
+  gold-set tutorial.
+- *Article foundation*: "LLM observability without a platform" -
+  consolidates streaming logger, cost estimator, prompt cache analyzer.
+- *Tutorial*: PII redaction at the LLM gateway in 10 minutes (still
+  pending from prior sessions).
+- *Decision pending*: whether to split `rag_eval_gold_set.py` out as a
+  micro-package `rag-eval` on PyPI. Gate on inbound traffic.
+
 ### 2026-05-22
 
 **Summary.** Closed the Week 3 workflow slot from `CONTENT_PLAN.md` by
