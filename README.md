@@ -20,6 +20,8 @@ The project is organized around five working areas.
 
 ## Latest content
 
+- **Tutorial** - [Build a 50-query gold set for your RAG system](./tutorials/2026-05-build-rag-eval-gold-set.md)
+- **Snippet** - [RAG eval harness (nDCG@10 + MRR, zero deps)](./snippets/python/rag_eval_gold_set.py)
 - **Workflow** - [Automated changelog generator, from git log to release notes](./workflows/llm-changelog-from-git.md)
 - **Article** - [Hybrid retrieval, with numbers](./articles/2026-05-hybrid-retrieval-numbers.md)
 - **Snippet** - [Cross-encoder reranker for RAG](./snippets/python/cross_encoder_reranker.py)
