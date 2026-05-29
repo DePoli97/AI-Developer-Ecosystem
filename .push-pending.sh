@@ -26,7 +26,10 @@ exec >>"$LOGFILE" 2>&1
 echo ""
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') push-pending run ==="
 
-cd "$MAIN" || { echo "ERROR: cannot cd to $MAIN"; exit 1; }
+cd "$MAIN" || {
+  echo "ERROR: cannot cd to $MAIN"
+  exit 1
+}
 
 # 0. Remove stale index.lock if no git process actually owns it.
 if [ -f .git/index.lock ]; then
@@ -73,10 +76,16 @@ trap restore_stash EXIT
 CURRENT_BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "")
 if [ "$CURRENT_BRANCH" != "main" ]; then
   echo "Switching from '$CURRENT_BRANCH' to main."
-  git checkout main || { echo "ERROR: cannot checkout main"; exit 1; }
+  git checkout main || {
+    echo "ERROR: cannot checkout main"
+    exit 1
+  }
 fi
 
-git fetch origin --quiet || { echo "ERROR: git fetch failed (offline?)"; exit 0; }
+git fetch origin --quiet || {
+  echo "ERROR: git fetch failed (offline?)"
+  exit 0
+}
 
 # Reset main to origin/main if local is behind / diverged, so bundles land
 # cleanly. Local commits past origin/main are preserved in reflog.
