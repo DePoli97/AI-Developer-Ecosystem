@@ -21,6 +21,8 @@ The plan is reviewed every Monday. Completed items move to
 | 4    | Article   | What hybrid retrieval actually buys you (with numbers) - DONE 2026-05-20 | hybrid retrieval bm25 embeddings | articles/2026-05-hybrid-retrieval-numbers.md                               |
 | 4    | Snippet   | Reciprocal rank fusion as a 30-line utility                    | reciprocal rank fusion python    | snippets/python/reciprocal_rank_fusion.py                                  |
 | 5    | Snippet   | Cross-encoder reranker (stage-two RAG ranking) - DONE 2026-05-20 | cross encoder reranker rag       | snippets/python/cross_encoder_reranker.py                                  |
+| 6    | Tutorial  | Streaming logger walkthrough - DONE 2026-05-29                 | log llm calls cost jsonl         | tutorials/2026-05-streaming-logger-walkthrough.md                          |
+| 6    | Tutorial  | PII redaction for LLM gateway - DONE 2026-05-29               | pii redaction llm python         | tutorials/2026-05-pii-redaction-llm-gateway.md                             |
 
 ## Standing slots
 
@@ -62,7 +64,13 @@ walk-through).
 The fourth cluster is **cost and observability**. Foundation: a cost
 engineering field guide. Tutorial: a streaming logger walkthrough. Snippet:
 `token_cost_estimator.py` and `streaming_response_logger.py`. Status:
-snippets shipped; foundation article and tutorial pending.
+**complete as of 2026-05-29**. Tutorials shipped:
+`tutorials/2026-05-streaming-logger-walkthrough.md` (how to log every call
+with cost, latency, and full text) and
+`tutorials/2026-05-pii-redaction-llm-gateway.md` (drop-in PII redaction
+for any API call). Next addition: a fifth cluster on **safety and
+compliance** seeded by the PII content, with a foundation article on
+"Defence-in-depth for LLM applications."
 
 The clusters are the spine of the SEO strategy in `SEO.md`. Cross-linking
 across the four clusters is more valuable than absolute volume.

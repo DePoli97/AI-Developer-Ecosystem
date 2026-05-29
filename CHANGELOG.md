@@ -5,6 +5,25 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-05-29
+
+### Added
+- Tutorial: *Log Every LLM Call: Cost, Latency, and Full Text in One Line*
+  (`tutorials/2026-05-streaming-logger-walkthrough.md`). Companion to
+  `streaming_response_logger.py`. Covers streaming-to-stdout with JSONL
+  persistence, `jq` analytics recipes, extra metadata fields, silent batch
+  mode, date-based log rotation, and a combined PII + logging pipeline.
+  Completes cluster 4 (cost & observability).
+- Tutorial: *Wrap Your LLM Calls With PII Redaction in 10 Minutes*
+  (`tutorials/2026-05-pii-redaction-llm-gateway.md`). Companion to
+  `pii_redactor.py`. Covers single-turn, multi-turn conversation, streaming,
+  detect-only audit logging, custom pattern extension, and CLI usage.
+  Seeds cluster 5 (safety & compliance).
+
+### Changed
+- `CONTENT_PLAN.md`: cluster 4 marked complete; cluster 5 proposal added;
+  new tutorials registered in the editorial table.
+
 ## 2026-05-25
 
 ### Added

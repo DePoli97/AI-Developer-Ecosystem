@@ -11,6 +11,48 @@ the `ai-developer-ecosystem-builder` scheduled task. Future runs should:
 
 Format per entry: date, summary, files touched, next steps surfaced.
 
+## Session entries
+
+### 2026-05-29
+
+**What was done.**
+- New: `tutorials/2026-05-streaming-logger-walkthrough.md` — companion to
+  `streaming_response_logger.py`; covers single-call logging, JSONL
+  analytics with `jq`, batch silent mode, log rotation, and combining with
+  PII redaction.
+- New: `tutorials/2026-05-pii-redaction-llm-gateway.md` — companion to
+  `pii_redactor.py`; walks through single-turn, multi-turn, streaming, and
+  CLI usage patterns; includes a custom-pattern extension section and a
+  combined PII + logging pipeline at the end.
+- Edit: `CONTENT_PLAN.md` — cluster 4 (cost & observability) marked
+  complete; both new tutorials added to the table; cluster 5 proposal
+  (safety & compliance) seeded.
+- Edit: `CHANGELOG.md` — 2026-05-29 section added.
+
+**State.** Working tree clean after per-file commits. Cluster 4 is the
+first cluster to have all three content types (foundation article, runnable
+tutorial, snippets) *plus* a second tutorial bridging into cluster 5.
+
+**Monetisation / SEO notes.**
+- "pii redaction llm python" is a thin-competition keyword with
+  clear commercial intent (teams evaluating this want a hosted solution).
+  The tutorial creates a natural funnel to the `pii-guard` product brief.
+- "log llm calls cost jsonl" targets infrastructure-minded engineers
+  already paying Anthropic; cross-link to the cost field guide doubles
+  the cluster's footprint for cost-related queries.
+
+**Next steps.**
+- *Article* (cluster 5 seed): "Defence-in-depth for LLM applications" —
+  covers prompt injection, PII leakage, output validation, and rate-limit
+  abuse. Foundational SEO piece for the safety cluster.
+- *Snippet*: `output_validator.py` — JSON schema + regex guard on model
+  output before it reaches the user; natural companion to structured JSON
+  output snippet.
+- *Tutorial*: "When to add a reranker, with numbers" — uses
+  `cross_encoder_reranker.py` + `rag_eval_gold_set.py` to benchmark
+  precision@k with and without a reranker pass. Closes the retrieval
+  cluster's remaining open item.
+
 ## Operating notes for autonomous agents
 
 - **Git push**: The remote URL in `.git/config` contains a fine-grained
