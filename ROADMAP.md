@@ -36,10 +36,8 @@ Once there is consistent traffic and a small audience, test the lowest-friction 
 
 Identify the one or two tools that have proven demand through GitHub stars, issues, and traffic, and spin them out into hosted versions with a free tier and a paid tier. Keep the open-source core. The repository remains the marketing hub.
 
-## Non-goals
+## MUST-goal
 
-The project is not trying to be a comprehensive AI textbook, a research blog, or a newsy site that chases every model release. We do not chase trends without a clear angle. We do not publish low-effort listicles. We do not accept low-quality contributions for the sake of activity.
+THIS MUST BE AN EARNING MACHINE
 
 ## Review cadence
-
-This roadmap is reviewed roughly every four weeks. Concrete short-term tasks live as issues or as items in `IDEAS.md`.
