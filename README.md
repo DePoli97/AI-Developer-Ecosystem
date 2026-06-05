@@ -21,6 +21,10 @@ The project is organized around five working areas.
 
 ## Latest content
 
+- **Article** - [Indirect prompt injection via RAG: threat model and mitigations](./articles/2026-06-indirect-prompt-injection-rag.md) — full attack taxonomy + working mitigations: structural delimiters, heuristic scanner, LLM-judge filter, privilege separation
+- **Snippet** - [RAG injection scanner — pre-injection chunk filter](./snippets/python/rag_injection_scanner.py) — filter attacker-controlled content before it reaches the context window; heuristic + optional LLM-judge; 8/8 self-test pass
+- **Article** - [Defence-in-depth for LLM applications](./articles/2026-06-llm-safety-defense-in-depth.md) — layered security model: input validation, PII scrubbing, prompt injection detection, output filtering, and audit logging
+- **Snippet** - [LLM firewall — drop-in defence wrapper](./snippets/python/llm_firewall.py) — all five layers in one class, zero extra dependencies beyond `anthropic`
 - **Tutorial** - [Build a 50-query gold set for your RAG system](./tutorials/2026-05-build-rag-eval-gold-set.md)
 - **Snippet** - [RAG eval harness (nDCG@10 + MRR, zero deps)](./snippets/python/rag_eval_gold_set.py)
 - **Workflow** - [Automated changelog generator, from git log to release notes](./workflows/llm-changelog-from-git.md)
