@@ -13,6 +13,54 @@ Format per entry: date, summary, files touched, next steps surfaced.
 
 ## Session entries
 
+### 2026-06-05
+
+**What was done.**
+- New: `articles/2026-06-indirect-prompt-injection-rag.md` — full threat model
+  and mitigation guide for indirect prompt injection via RAG. Covers five attack
+  classes (instruction override, role hijack, tool invocation injection, data
+  exfiltration via embedding, corpus-wide poisoning) and six mitigation layers
+  (structural delimiters, heuristic chunk scanner, LLM-judge pre-filter,
+  privilege separation, audit logging, corpus integrity controls). Includes
+  working code for every mitigation. Companion to the LLM firewall snippet.
+- New: `snippets/python/rag_injection_scanner.py` — pre-injection scanner for
+  RAG retrieved chunks. Three layers: heuristic regex scan (18 patterns),
+  structural delimiter wrapping (untrusted-content instruction + `<retrieved>`
+  tags), optional Haiku LLM-judge classification. Returns `FilterReport` with
+  per-chunk detail. Self-test: 8/8 correct classifications with no API key.
+- Edit: `snippets/README.md` — indexed `llm_firewall.py` and `rag_injection_scanner.py`.
+- Edit: `articles/README.md` — indexed new article.
+- Edit: `CONTENT_PLAN.md` — marked article and scanner as DONE 2026-06-05;
+  added two new planned items (secure RAG pipeline tutorial, multi-turn context
+  attacks article).
+- Edit: `README.md` — surfaced the two new items at the top of Latest content.
+
+**State.** Self-test passes (8/8). Working tree clean after commits.
+`llm_firewall.py` was staged from a prior session; committed here.
+
+**Monetisation / SEO notes.**
+- "Indirect prompt injection" is a rising search term as RAG deployments scale.
+  This article closes the keyword gap in the safety cluster and cross-links to
+  four other pieces in the repo (LLM firewall, hybrid retrieval, RAG starter,
+  defence-in-depth article).
+- The `rag_injection_scanner.py` snippet is a natural front door to a hosted
+  "RAG security audit" service: run the scanner over a customer's corpus,
+  return a risk report. Could be offered as a free CLI + paid API.
+- The scanner also pairs well with the `pii_redactor.py` for a "secure RAG
+  gateway" product: scrub PII on ingest + block injections pre-retrieval.
+
+**Next steps surfaced.**
+- *Tutorial*: "Secure RAG pipeline end-to-end" — wire together
+  `rag_injection_scanner.py`, `llm_firewall.py`, and `streaming_response_logger.py`
+  into a single runnable pipeline with audit log output.
+- *Article*: "Multi-turn context attacks on LLM agents" — the next frontier
+  of prompt injection: spreading an attack across multiple turns or retrieval
+  calls. High SEO potential; not covered anywhere in the safety cluster yet.
+- *Tutorial*: "Build a code-review agent with the Claude Agent SDK" — still
+  planned, still high value.
+- *Opportunity*: write a product brief for a "RAG security scanner" CLI tool
+  under `opportunities/` — free open-source + paid hosted API angle.
+
 ### 2026-05-29
 
 **What was done.**
