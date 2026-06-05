@@ -49,6 +49,7 @@ tmp/
 secrets/
 *.pem
 *.key
+.github-token
 
 # Leftover sandbox probe file - safe to delete manually
 test.txt
