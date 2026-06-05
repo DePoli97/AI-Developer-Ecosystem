@@ -23,6 +23,13 @@ The plan is reviewed every Monday. Completed items move to
 | 5    | Snippet   | Cross-encoder reranker (stage-two RAG ranking) - DONE 2026-05-20 | cross encoder reranker rag       | snippets/python/cross_encoder_reranker.py                                  |
 | 6    | Tutorial  | Streaming logger walkthrough - DONE 2026-05-29                 | log llm calls cost jsonl         | tutorials/2026-05-streaming-logger-walkthrough.md                          |
 | 6    | Tutorial  | PII redaction for LLM gateway - DONE 2026-05-29               | pii redaction llm python         | tutorials/2026-05-pii-redaction-llm-gateway.md                             |
+| 7    | Article   | Defence-in-depth for LLM applications - DONE 2026-06-01        | llm security prompt injection    | articles/2026-06-llm-safety-defense-in-depth.md                            |
+| 7    | Snippet   | LLM firewall drop-in wrapper - DONE 2026-06-01                 | llm firewall python anthropic    | snippets/python/llm_firewall.py                                             |
+| 8    | Tutorial  | Build a code-review agent with the Claude Agent SDK            | claude code review agent         | tutorials/2026-06-claude-code-review-agent.md                              |
+| 8    | Article   | Indirect prompt injection via RAG — DONE 2026-06-05            | indirect prompt injection rag    | articles/2026-06-indirect-prompt-injection-rag.md                          |
+| 8    | Snippet   | RAG injection scanner (pre-injection chunk filter) — DONE 2026-06-05 | rag security prompt injection python | snippets/python/rag_injection_scanner.py                        |
+| 9    | Tutorial  | Secure RAG pipeline end-to-end (scanner + firewall + audit)    | secure rag python llm            | tutorials/2026-06-secure-rag-pipeline.md                                   |
+| 9    | Article   | Multi-turn context attacks on LLM agents                       | multi turn prompt injection llm  | articles/2026-06-multi-turn-context-attacks.md                             |
 
 ## Standing slots
 
@@ -68,9 +75,12 @@ engineering field guide. Tutorial: a streaming logger walkthrough. Snippet:
 `tutorials/2026-05-streaming-logger-walkthrough.md` (how to log every call
 with cost, latency, and full text) and
 `tutorials/2026-05-pii-redaction-llm-gateway.md` (drop-in PII redaction
-for any API call). Next addition: a fifth cluster on **safety and
-compliance** seeded by the PII content, with a foundation article on
-"Defence-in-depth for LLM applications."
+for any API call).
+
+The fifth cluster is **safety and compliance**. Foundation: "Defence-in-depth
+for LLM applications" (shipped 2026-06-01). Snippet: `llm_firewall.py`
+(shipped 2026-06-01). Next additions: a tutorial on indirect prompt injection
+via RAG, and a follow-up article on multi-turn context attacks.
 
 The clusters are the spine of the SEO strategy in `SEO.md`. Cross-linking
 across the four clusters is more valuable than absolute volume.
