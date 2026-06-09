@@ -25,7 +25,7 @@ The plan is reviewed every Monday. Completed items move to
 | 6    | Tutorial  | PII redaction for LLM gateway - DONE 2026-05-29               | pii redaction llm python         | tutorials/2026-05-pii-redaction-llm-gateway.md                             |
 | 7    | Article   | Defence-in-depth for LLM applications - DONE 2026-06-01        | llm security prompt injection    | articles/2026-06-llm-safety-defense-in-depth.md                            |
 | 7    | Snippet   | LLM firewall drop-in wrapper - DONE 2026-06-01                 | llm firewall python anthropic    | snippets/python/llm_firewall.py                                             |
-| 8    | Tutorial  | Build a code-review agent with the Claude Agent SDK            | claude code review agent         | tutorials/2026-06-claude-code-review-agent.md                              |
+| 8    | Tutorial  | Build a code-review agent with the Claude Agent SDK — DONE 2026-06-09 | claude code review agent  | tutorials/2026-06-claude-code-review-agent.md                              |
 | 8    | Article   | Indirect prompt injection via RAG — DONE 2026-06-05            | indirect prompt injection rag    | articles/2026-06-indirect-prompt-injection-rag.md                          |
 | 8    | Snippet   | RAG injection scanner (pre-injection chunk filter) — DONE 2026-06-05 | rag security prompt injection python | snippets/python/rag_injection_scanner.py                        |
 | 9    | Tutorial  | Secure RAG pipeline end-to-end (scanner + firewall + audit)    | secure rag python llm            | tutorials/2026-06-secure-rag-pipeline.md                                   |
@@ -50,7 +50,9 @@ article, one tutorial with runnable code, and at least one snippet.
 
 The first cluster is **Claude agents**. Foundation: the trends article.
 Tutorial: the Agent SDK quickstart. Snippet: `claude_agent_sdk_starter.py`.
-Status: complete. Next addition: a code-review agent.
+Additional tutorial: code-review agent (shipped 2026-06-09 at
+`tutorials/2026-06-claude-code-review-agent.md`). Status: deep, growing.
+Next addition: a secure multi-agent orchestration pattern.
 
 The second cluster is **prompt engineering as code**. Foundation: a future
 "prompts-as-code" article that consolidates the patterns. Tutorial: the
