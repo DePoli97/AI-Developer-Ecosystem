@@ -6,6 +6,7 @@ A scratchpad for notes on AI / devtools trends, market gaps, and observations th
 
 - [`agent-frameworks-landscape-2026-05.md`](./agent-frameworks-landscape-2026-05.md) - Field comparison of the agent frameworks worth considering for production work, with recommendations by team profile.
 - [`2026-05-18-pii-redaction-landscape.md`](./2026-05-18-pii-redaction-landscape.md) - Where redaction should sit in an LLM pipeline, the realistic options in May 2026 (roll-your-own, Presidio, cloud DLP, commercial vaults), and the most plausible monetisation path out of the new `pii_redactor.py` snippet.
+- [`2026-06-09-multi-turn-context-attacks.md`](./2026-06-09-multi-turn-context-attacks.md) - Taxonomy of injection attacks that unfold across multiple turns: slow-burn priming, context-window poisoning, memory poisoning, role-confusion escalation. Seed notes for the upcoming article and `session_integrity_guard.py` snippet.
 
 ## Open notes
 
