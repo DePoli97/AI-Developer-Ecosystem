@@ -5,6 +5,28 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-06-09
+
+### Added
+- Tutorial: *Build a code-review agent with the Claude Agent SDK*
+  (`tutorials/2026-06-claude-code-review-agent.md`). Full walkthrough of
+  `code_review_agent.py`: diff parser, offline rule-based reviewer (secrets,
+  bare-except, debug prints), Claude agent loop with two tools, GitHub Actions
+  integration, cost profile, and extension guide for TypeScript. Deepens
+  cluster 1 (Claude agents).
+- Research note: *Multi-turn context attacks on LLM agents*
+  (`research/2026-06-09-multi-turn-context-attacks.md`). Taxonomy of
+  slow-burn priming, context-window poisoning, memory poisoning, and
+  role-confusion escalation. Seed material for the upcoming article and
+  `session_integrity_guard.py` snippet.
+
+### Changed
+- `tutorials/README.md`: indexed new code-review agent tutorial; updated
+  Coming Soon section.
+- `research/README.md`: indexed new multi-turn context attacks note.
+- `CONTENT_PLAN.md`: code-review agent tutorial marked DONE 2026-06-09;
+  cluster 1 status updated.
+
 ## 2026-05-29
 
 ### Added
