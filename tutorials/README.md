@@ -16,8 +16,11 @@ Step-by-step guides. Each tutorial gets you from zero to a working result in a s
 
 2026-05 - [Build a 50-query gold set for your RAG system](./2026-05-build-rag-eval-gold-set.md). The hand-labelling and measurement loop that turns every retrieval change into a number. Companion snippet at `snippets/python/rag_eval_gold_set.py` with a self-tested nDCG@10 + MRR harness.
 
+2026-06 - [Build a code-review agent with the Claude Agent SDK](./2026-06-claude-code-review-agent.md). Take a unified diff, run fast offline rules (secrets, bare-except, debug prints), then hand off to Claude for a structured JSON verdict. Wires into GitHub Actions. Companion snippet at `snippets/python/code_review_agent.py`.
+
 ## Coming soon
 
-- A code-review agent built on top of the Agent SDK quickstart.
+- Secure RAG pipeline end-to-end: scanner + firewall + audit log.
+- Multi-turn context attacks on LLM agents — and how to defend.
 
 Topics tracked in `IDEAS.md` and `CONTENT_PLAN.md`.
