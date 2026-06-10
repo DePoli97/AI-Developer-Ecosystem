@@ -5,6 +5,24 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-06-10
+
+### Added
+- Tutorial: *Secure RAG Pipeline End-to-End*
+  (`tutorials/2026-06-secure-rag-pipeline.md`). Assembles the existing
+  `rag_injection_scanner.py`, `llm_firewall.py`, and
+  `streaming_response_logger.py` into a single hardened pipeline class.
+  Covers corpus poisoning threat model, structural prompt assembly with
+  `<context>` delimiters, a runnable demo that flags a poisoned chunk, a
+  production hardening checklist, performance notes (< 1 ms overhead on
+  clean corpora), and known limitations (semantic injection, model
+  compliance, access control). Completes the Week 9 security cluster.
+
+### Changed
+- `tutorials/README.md`: indexed secure RAG pipeline tutorial; updated
+  Coming Soon section.
+- `CHANGELOG.md`: added 2026-06-10 entry.
+
 ## 2026-06-09
 
 ### Added

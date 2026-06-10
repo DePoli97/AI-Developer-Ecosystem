@@ -18,9 +18,11 @@ Step-by-step guides. Each tutorial gets you from zero to a working result in a s
 
 2026-06 - [Build a code-review agent with the Claude Agent SDK](./2026-06-claude-code-review-agent.md). Take a unified diff, run fast offline rules (secrets, bare-except, debug prints), then hand off to Claude for a structured JSON verdict. Wires into GitHub Actions. Companion snippet at `snippets/python/code_review_agent.py`.
 
+2026-06 - [Secure RAG pipeline end-to-end](./2026-06-secure-rag-pipeline.md). Layer a pre-injection chunk scanner, LLM firewall, and structured audit log into a single hardened pipeline. Covers corpus poisoning threat model, prompt assembly, checklist for production hardening, and a runnable demo.
+
 ## Coming soon
 
-- Secure RAG pipeline end-to-end: scanner + firewall + audit log.
 - Multi-turn context attacks on LLM agents — and how to defend.
+- Secure multi-agent orchestration patterns.
 
 Topics tracked in `IDEAS.md` and `CONTENT_PLAN.md`.
