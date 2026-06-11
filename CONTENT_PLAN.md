@@ -29,7 +29,8 @@ The plan is reviewed every Monday. Completed items move to
 | 8    | Article   | Indirect prompt injection via RAG — DONE 2026-06-05            | indirect prompt injection rag    | articles/2026-06-indirect-prompt-injection-rag.md                          |
 | 8    | Snippet   | RAG injection scanner (pre-injection chunk filter) — DONE 2026-06-05 | rag security prompt injection python | snippets/python/rag_injection_scanner.py                        |
 | 9    | Tutorial  | Secure RAG pipeline end-to-end (scanner + firewall + audit) — DONE 2026-06-10 | secure rag python llm | tutorials/2026-06-secure-rag-pipeline.md                          |
-| 9    | Article   | Multi-turn context attacks on LLM agents                       | multi turn prompt injection llm  | articles/2026-06-multi-turn-context-attacks.md                             |
+| 9    | Article   | Multi-turn context attacks on LLM agents — DONE 2026-06-11     | multi turn prompt injection llm  | articles/2026-06-multi-turn-context-attacks.md                             |
+| 9    | Snippet   | Session integrity guard for multi-turn agents — DONE 2026-06-11 | llm session integrity python    | snippets/python/session_integrity_guard.py                                 |
 
 ## Standing slots
 
@@ -84,9 +85,13 @@ for LLM applications" (shipped 2026-06-01). Snippet: `llm_firewall.py`
 (shipped 2026-06-01). Article: indirect prompt injection via RAG (shipped
 2026-06-05). Tutorial: secure RAG pipeline end-to-end (shipped 2026-06-10
 at `tutorials/2026-06-secure-rag-pipeline.md`). Research note: multi-turn
-context attacks (shipped 2026-06-09). Status: strong. Next additions: a
-full article on multi-turn context attacks and a `session_integrity_guard.py`
-snippet.
+context attacks (shipped 2026-06-09). Article: multi-turn context attacks
+(shipped 2026-06-11 at `articles/2026-06-multi-turn-context-attacks.md`).
+Snippet: `session_integrity_guard.py` (shipped 2026-06-11). Status: **complete
+as of 2026-06-11**. The cluster now covers single-turn injection, document
+poisoning, memory poisoning, multi-turn priming, and multi-agent escalation,
+with runnable code at every layer. Next: consider a `pip install
+llm-session-guard` micro-library wrapping the guard and firewall together.
 
 The clusters are the spine of the SEO strategy in `SEO.md`. Cross-linking
 across the four clusters is more valuable than absolute volume.
