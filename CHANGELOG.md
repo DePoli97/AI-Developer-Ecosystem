@@ -5,6 +5,34 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-06-11
+
+### Added
+- Article: *Multi-turn context attacks on LLM agents*
+  (`articles/2026-06-multi-turn-context-attacks.md`). Full article from the
+  2026-06-09 research note. Taxonomy of four attack shapes (slow-burn priming,
+  context-window poisoning via long documents, memory poisoning in stateful
+  agents, role-confusion escalation in multi-agent pipelines). Explains why
+  each attack defeats per-call defences and provides concrete mitigations:
+  system-prompt fingerprinting, safety re-assertion before side-effectful
+  tool calls, treating memory as untrusted input, and sub-agent output
+  sanitisation. Includes per-call and per-session defensive checklists.
+  Completes cluster 5 (safety and compliance).
+- Snippet: `session_integrity_guard.py`
+  (`snippets/python/session_integrity_guard.py`). Session-level integrity
+  guard for multi-turn LLM agents. Fingerprints the system prompt (SHA-256)
+  at session start; scans every user message, tool return, memory read, and
+  retrieved document for eight multi-turn injection patterns; injects a
+  safety re-assertion before any tool in `SIDE_EFFECT_TOOLS`; writes a
+  structured JSONL audit log. `sanitise_agent_output()` strips role-tag
+  injection from sub-agent output. Companion to `llm_firewall.py`.
+
+### Changed
+- `articles/README.md`: indexed multi-turn context attacks article.
+- `snippets/README.md`: indexed `session_integrity_guard.py`.
+- `CONTENT_PLAN.md`: marked article and snippet done; updated cluster 5
+  status to complete.
+
 ## 2026-06-10
 
 ### Added
