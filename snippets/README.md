@@ -37,6 +37,7 @@ Small, focused code samples. Each one is self-contained, runs as-is (after insta
 - `python/rag_eval_gold_set.py` - 200-line evaluation harness for RAG retrievers. Loads a hand-labelled gold set, runs every retriever variant via a common callable signature, reports nDCG@10 + MRR, prints worst per-query regressions for triage. Zero third-party deps. Companion to the gold-set tutorial.
 - `python/llm_firewall.py` - Defence-in-depth wrapper for Anthropic API calls. Five layers: input length cap, control-character stripping, heuristic prompt-injection detection, PII scrubbing, and output secret-leakage scan. Structured JSONL audit log. Optional LLM-judge layer. Ships with a self-test.
 - `python/rag_injection_scanner.py` - Pre-injection scanner for RAG retrieved chunks. Heuristic regex scan + structural delimiter wrapping + optional LLM-judge classification. Filters attacker-controlled content before it reaches the context window. Returns a FilterReport with per-chunk detail. Ships with a self-test. Companion to the indirect prompt injection article.
+- `python/session_integrity_guard.py` - Session-level integrity guard for multi-turn LLM agents. Fingerprints the system prompt at session start, scans all inbound content (user messages, tool returns, memory reads) for multi-turn injection patterns, injects a safety re-assertion before side-effectful tool calls, and writes a JSONL audit log. Companion to `llm_firewall.py` and the multi-turn context attacks article.
 
 ## Conventions
 
