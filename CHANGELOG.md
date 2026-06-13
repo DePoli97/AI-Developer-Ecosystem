@@ -5,6 +5,32 @@ loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning is date-based because this is a content repository, not a
 released library.
 
+## 2026-06-12
+
+### Added
+- Article: *Prompts as code: treat your prompts like the engineering
+  artefacts they are*
+  (`articles/2026-06-prompts-as-code-engineering-discipline.md`). Foundation
+  article for cluster 2 (prompt engineering as code). Covers the four reasons
+  prompts rot in production (no diff history, implicit model coupling, absent
+  test suite, team drift), then the full discipline: store in version control,
+  review in PRs, pin model versions as constants, write a golden-example
+  regression suite, run CI on every prompt change, and stage rollout with
+  feature flags. Includes a complete CI YAML sketch and an honest "what this
+  does not solve" section. Companion to the prompt versioning tutorial and
+  `prompt_version_runner.py`. Completes cluster 2.
+- Snippet: `session_integrity_guard.py` materialised on disk
+  (`snippets/python/session_integrity_guard.py`). Referenced in the content
+  plan and the multi-turn article but missing from disk; added now. Lightweight
+  stateless guard: SHA-256 baseline for the system prompt, role-sequence
+  validation, heuristic injection-pattern scan over the last N turns. Four
+  self-tests pass with no API key.
+
+### Changed
+- `CONTENT_PLAN.md`: cluster 2 status updated to "complete as of
+  2026-06-12"; next-addition note added.
+- `articles/README.md`: prompts-as-code article indexed.
+
 ## 2026-06-11
 
 ### Added

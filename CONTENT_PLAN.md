@@ -55,11 +55,16 @@ Additional tutorial: code-review agent (shipped 2026-06-09 at
 `tutorials/2026-06-claude-code-review-agent.md`). Status: deep, growing.
 Next addition: a secure multi-agent orchestration pattern.
 
-The second cluster is **prompt engineering as code**. Foundation: a future
-"prompts-as-code" article that consolidates the patterns. Tutorial: the
-prompt versioning with golden examples tutorial. Snippet:
-`prompt_version_runner.py`. Status: tutorial and snippet shipped; foundation
-article pending.
+The second cluster is **prompt engineering as code**. Foundation:
+"Prompts as code: treat your prompts like the engineering artefacts they
+are" (shipped 2026-06-12 at
+`articles/2026-06-prompts-as-code-engineering-discipline.md`). Tutorial:
+the prompt versioning with golden examples tutorial. Snippet:
+`prompt_version_runner.py`. Status: **complete as of 2026-06-12**. The
+cluster now covers the full discipline: file layout, PR review, model-version
+pinning, golden-example CI, and staged rollout with feature flags. Next
+addition: a micro-guide on "when to use DSPy vs hand-tuned prompts" as a
+companion to the foundation article.
 
 The third cluster is **retrieval**. Foundation: a hybrid retrieval article
 backed by numbers. Tutorial: a runnable RAG starter. Workflow: the SQLite
